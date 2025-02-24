@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyGames - Авторизация</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Jost', sans-serif;
+        }
+
+        body {
+            background: #F7F6F3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 375px;
+            height: 812px;
+            position: relative;
+            background: #F7F6F3;
+        }
+
+        .auth-card {
+            position: absolute;
+            width: 320px;
+            height: 435px;
+            /* Увеличена высота для размещения всех элементов */
+            left: calc(50% - 320px/2 + 0.5px);
+            top: 166px;
+            background: #FFFFFF;
+            border-radius: 6.84px;
+            padding: 30px 28px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .title {
+            position: absolute;
+            width: 275px;
+            top: 117px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            background: linear-gradient(90deg, #946ED9, #AB8CE3 25%, #DF6BCF 47%, #E77E9C 74%, #FF5731 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .input-field {
+            width: 100%;
+            height: 40px;
+            padding: 0 20px;
+            border: none;
+            border-radius: 30px;
+            background: #EFEFED;
+            font-size: 13px;
+            color: #ADADAC;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-radius: 25px;
+            background: #FF5731;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .arrow-icon {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: #AEAEAE;
+            margin: 25px 0;
+        }
+
+        .social-section {
+            text-align: center;
+        }
+
+        .social-text {
+            font-size: 13px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icon {
+            width: 37px;
+            height: 37px;
+            cursor: pointer;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .register-link strong {
+            font-weight: 600;
+            cursor: pointer;
+            color: #FF5731;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Войдите в свой аккаунт</h1>
+
+        <div class="auth-card">
+            <div class="input-group">
+                <label>Email пользователя</label>
+                <input type="email" class="input-field" placeholder="Email пользователя">
+            </div>
+
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" class="input-field" placeholder="Пароль">
+            </div>
+
+            <button class="login-btn">
+                <img src="imges/logos/Arrow.png" alt="Стрелка" class="arrow-icon">
+                Войти
+            </button>
+
+            <p class="forgot-password">Забыли пароль?</p>
+
+            <div class="divider"></div>
+
+            <div class="social-section">
+                <p class="social-text">Или продолжите через:</p>
+                <div class="social-icons">
+                    <img src="imges/logos/vk_icon.png" alt="VK" class="social-icon">
+                    <img src="imges/logos/google_icon.png" alt="Google" class="social-icon">
+                    <img src="imges/logos/github_icon.png" alt="Telegram" class="social-icon">
+                </div>
+            </div>
+
+            <div class="register-link">
+                <p>Первый раз в PolyGames?</p>
+                <strong>Создать аккаунт</strong>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

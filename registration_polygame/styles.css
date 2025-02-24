@@ -1,0 +1,312 @@
+/* Общие стили */
+:root {
+    --primary: #FF5731;
+    --secondary: #9960FF;
+    --background: #F7F7F5;
+    --surface: #FFFFFF;
+    --text: #060606;
+    --gray: #ADADAC;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Хедер */
+header {
+    background: var(--surface);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+   
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    width: 160px;
+    height: auto;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 250px; /* Adjust based on design */
+    background: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-container img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+.search-input {
+    width: 400px;
+    padding: 12px 45px 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #EFEFED;
+    font-size: 16px;
+}
+
+.theme-switcher {
+    display: flex;
+    background: #EFEFED;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.theme-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn.login {
+    background: #E3E3E1;
+    color: var(--text);
+}
+
+.btn.register {
+    background: var(--secondary);
+    color: white;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    margin-top: 120px;
+    padding: 40px 5%;
+}
+
+.auth-container {
+    max-width: 874px;
+    margin: 0 auto;
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 60px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gradient-text {
+    background: linear-gradient(90.35deg, #AD7EFF 0%, #C29FFF 25.72%, #FF9AF1 47.25%, #E58EA7 74.18%, #FF5731 100.8%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 68px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    background: #EFEFED;
+    font-size: 20px;
+}
+
+.submit-btn {
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    width: 100%;
+    max-width: 280px; /* Adjust to match the design */
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+.arrow-circle {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.arrow-circle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary);
+    width: 18px;
+}
+.create-account {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.create-link {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-link:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    color: var(--primary);
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* Социальные иконки */
+.social-auth {
+    margin: 50px 0;
+}
+
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Футер */
+footer {
+    background: var(--background);
+    padding: 40px 5%;
+    margin-top: auto;
+}
+
+.footer-grid {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 200px;
+    gap: 30px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .gradient-text { font-size: 50px; }
+    .header-nav { gap: 20px; }
+    .search-input { width: 300px; }
+}
+
+@media (max-width: 768px) {
+    /* Мобильные стили */
+}
