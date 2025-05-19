@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyGames - Московский Политех</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="img/poly_games.png" alt="PolyGames" class="logo">
+                <img src="mospoly.png" alt="Московский Политех" class="university-logo">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск игр...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="header-actions">
+                <div class="theme-switcher">
+                    <button class="btn-theme active">Светлая</button>
+                    <button class="btn-theme">Темная</button>
+                </div>
+                <button class="btn btn-register">Регистрация</button>
+                <button class="btn btn-login">Войти</button>
+                <button class="btn btn-menu mobile-menu-icon"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container main-layout">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul class="sidebar-list">
+                    <li class="sidebar-item"><a href="#" class="sidebar-link active">Все игры</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Приключения</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Стратегии</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Симуляторы</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Команды</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Мои проекты</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Топ разработчиков</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="content-area">
+                <!-- Page Title -->
+                <h1 class="page-title">Создайте свою игру</h1>
+
+                <!-- Competition Card -->
+                <div class="card">
+                    <h2 class="card-title">Всероссийский конкурс «Научи игру»</h2>
+                    <p class="card-text">
+                        Московский Политех стал партнером третьего сезона конкурса. Участвуйте самостоятельно 
+                        или в команде до 10 человек. Создавайте новые проекты или улучшайте существующие.
+                    </p>
+                    <button class="btn btn-continue">Подробнее о конкурсе</button>
+                </div>
+
+                <!-- Project Form Card -->
+                <div class="card">
+                    <h2 class="card-title">Новый проект</h2>
+                    <form class="project-form">
+                        <div class="form-group">
+                            <label>Название игры</label>
+                            <input type="text" class="form-control" placeholder="Введите название">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Жанр</label>
+                            <select class="form-control">
+                                <option>Выберите жанр</option>
+                                <option>Приключения</option>
+                                <option>Стратегия</option>
+                                <option>Симулятор</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Описание</label>
+                            <textarea class="form-control" rows="5" placeholder="Опишите вашу игру"></textarea>
+                        </div>
+
+                        <div class="file-upload">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <div class="file-upload-text">Перетащите файлы игры или кликните для загрузки</div>
+                            <input type="file" hidden>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox-input">
+                                Принимаю условия конкурса
+                            </label>
+                        </div>
+
+                        <button class="btn btn-continue">Опубликовать проект</button>
+                    </form>
+                </div>
+
+                <!-- Game Cards Grid -->
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-thumbnail"></div>
+                        <h3 class="game-title">ECO Collapse</h3>
+                        <p class="game-description">Стратегия выживания в постапокалиптическом мире</p>
+                        <div class="game-tags">
+                            <span class="game-tag">Стратегия</span>
+                            <span class="game-tag">Выживание</span>
+                        </div>
+                    </div>
+                    <!-- More game cards... -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <img src="mospoly.png" alt="Московский Политех" class="footer-logo">
+                <p class="footer-text">Платформа студенческих проектов</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#" class="footer-link">О проекте</a>
+                <a href="#" class="footer-link">Контакты</a>
+                <a href="#" class="footer-link">Партнерам</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
